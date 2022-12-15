@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <!-- Password Section -->
+    <section class="password-section">
+      <!-- Header -->
+      <header class="pass-header">
+        <h2>Generate a <br /><span>random Password</span></h2>
+        <p>Never use an insecure password again.</p>
+      </header>
+
+      <!-- Controls Container  -->
+      <div class="controls-container">
+        <button class="generate-btn">Generate Passwords</button>
+
+        <label class="pass-label" for="pass-length">Length</label>
+        <input id="pass-length" type="number" name="" value="15" />
+
+        <!-- switch 1 -->
+        <div class="switch-container">
+          <span class="switch-text"> Symbols </span>
+          <label class="switch">
+            <input class="check" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <!-- switch 2 -->
+        <div class="switch-container">
+          <span class="switch-text"> Numbers </span>
+          <label class="switch">
+            <input class="check" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- password container -->
+      <div class="pass-container">
+        <div>
+          <p class="pass">asdfg3r214</p>
+          <p class="copied hide">Copied</p>
+        </div>
+        <div>
+          <p class="pass">asdfg3r214</p>
+          <p class="copied hide">Copied</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
